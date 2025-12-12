@@ -1,0 +1,351 @@
+(globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
+"[project]/sanity/env.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "apiVersion",
+    ()=>apiVersion,
+    "dataset",
+    ()=>dataset,
+    "projectId",
+    ()=>projectId
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
+const apiVersion = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXT_PUBLIC_SANITY_API_VERSION || '2025-12-05';
+const dataset = ("TURBOPACK compile-time value", "production");
+const projectId = ("TURBOPACK compile-time value", "gzulfsv6");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/sanity/schemaTypes/blockContentType.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "blockContentType",
+    ()=>blockContentType
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$types$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@sanity/types/lib/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$icons$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@sanity/icons/dist/index.js [app-client] (ecmascript)");
+;
+;
+const blockContentType = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$types$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defineType"])({
+    title: 'Block Content',
+    name: 'blockContent',
+    type: 'array',
+    of: [
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$types$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defineArrayMember"])({
+            type: 'block',
+            // Styles let you define what blocks can be marked up as. The default
+            // set corresponds with HTML tags, but you can set any title or value
+            // you want, and decide how you want to deal with it where you want to
+            // use your content.
+            styles: [
+                {
+                    title: 'Normal',
+                    value: 'normal'
+                },
+                {
+                    title: 'H1',
+                    value: 'h1'
+                },
+                {
+                    title: 'H2',
+                    value: 'h2'
+                },
+                {
+                    title: 'H3',
+                    value: 'h3'
+                },
+                {
+                    title: 'H4',
+                    value: 'h4'
+                },
+                {
+                    title: 'Quote',
+                    value: 'blockquote'
+                }
+            ],
+            lists: [
+                {
+                    title: 'Bullet',
+                    value: 'bullet'
+                }
+            ],
+            // Marks let you mark up inline text in the Portable Text Editor
+            marks: {
+                // Decorators usually describe a single property – e.g. a typographic
+                // preference or highlighting
+                decorators: [
+                    {
+                        title: 'Strong',
+                        value: 'strong'
+                    },
+                    {
+                        title: 'Emphasis',
+                        value: 'em'
+                    }
+                ],
+                // Annotations can be any object structure – e.g. a link or a footnote.
+                annotations: [
+                    {
+                        title: 'URL',
+                        name: 'link',
+                        type: 'object',
+                        fields: [
+                            {
+                                title: 'URL',
+                                name: 'href',
+                                type: 'url'
+                            }
+                        ]
+                    }
+                ]
+            }
+        }),
+        // You can add additional types here. Note that you can't use
+        // primitive types such as 'string' and 'number' in the same array
+        // as a block type.
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$types$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defineArrayMember"])({
+            type: 'image',
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$icons$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ImageIcon"],
+            options: {
+                hotspot: true
+            },
+            fields: [
+                {
+                    name: 'alt',
+                    type: 'string',
+                    title: 'Alternative Text'
+                }
+            ]
+        })
+    ]
+});
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/sanity/schemaTypes/categoryType.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "categoryType",
+    ()=>categoryType
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$icons$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@sanity/icons/dist/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$types$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@sanity/types/lib/index.js [app-client] (ecmascript)");
+;
+;
+const categoryType = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$types$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defineType"])({
+    name: 'category',
+    title: 'Category',
+    type: 'document',
+    icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$icons$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TagIcon"],
+    fields: [
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$types$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defineField"])({
+            name: 'title',
+            type: 'string'
+        }),
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$types$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defineField"])({
+            name: 'slug',
+            type: 'slug',
+            options: {
+                source: 'title'
+            }
+        }),
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$types$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defineField"])({
+            name: 'description',
+            type: 'text'
+        })
+    ]
+});
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/sanity/schemaTypes/postType.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "postType",
+    ()=>postType
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$icons$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@sanity/icons/dist/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$types$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@sanity/types/lib/index.js [app-client] (ecmascript)");
+;
+;
+const postType = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$types$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defineType"])({
+    name: "post",
+    title: "Post",
+    type: "document",
+    icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$icons$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DocumentTextIcon"],
+    fields: [
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$types$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defineField"])({
+            name: "title",
+            type: "string"
+        }),
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$types$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defineField"])({
+            name: "slug",
+            type: "slug",
+            options: {
+                source: "title"
+            }
+        }),
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$types$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defineField"])({
+            name: "mainImage",
+            type: "image",
+            options: {
+                hotspot: true
+            },
+            fields: [
+                (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$types$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defineField"])({
+                    name: "alt",
+                    type: "string",
+                    title: "Alternative text"
+                })
+            ]
+        }),
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$types$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defineField"])({
+            name: "bannerImage",
+            type: "image",
+            options: {
+                hotspot: true
+            },
+            fields: [
+                (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$types$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defineField"])({
+                    name: "alt",
+                    type: "string",
+                    title: "Alternative text"
+                })
+            ]
+        }),
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$types$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defineField"])({
+            name: "categories",
+            type: "array",
+            of: [
+                (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$types$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defineArrayMember"])({
+                    type: "reference",
+                    to: {
+                        type: "category"
+                    }
+                })
+            ]
+        }),
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$types$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defineField"])({
+            name: "publishedAt",
+            type: "datetime"
+        }),
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$types$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defineField"])({
+            name: "author",
+            type: "string"
+        }),
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$types$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defineField"])({
+            name: "body",
+            type: "blockContent"
+        })
+    ],
+    preview: {
+        select: {
+            title: "title",
+            media: "mainImage"
+        }
+    }
+});
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/sanity/schemaTypes/index.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "schema",
+    ()=>schema
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$sanity$2f$schemaTypes$2f$blockContentType$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/sanity/schemaTypes/blockContentType.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$sanity$2f$schemaTypes$2f$categoryType$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/sanity/schemaTypes/categoryType.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$sanity$2f$schemaTypes$2f$postType$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/sanity/schemaTypes/postType.js [app-client] (ecmascript)");
+;
+;
+;
+const schema = {
+    types: [
+        __TURBOPACK__imported__module__$5b$project$5d2f$sanity$2f$schemaTypes$2f$blockContentType$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["blockContentType"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$sanity$2f$schemaTypes$2f$categoryType$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["categoryType"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$sanity$2f$schemaTypes$2f$postType$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["postType"]
+    ]
+};
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/sanity/structure.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// https://www.sanity.io/docs/structure-builder-cheat-sheet
+__turbopack_context__.s([
+    "structure",
+    ()=>structure
+]);
+const structure = (S)=>S.list().title('Blog').items([
+        S.documentTypeListItem('post').title('Posts'),
+        // S.documentTypeListItem('category').title('Categories'),
+        // S.documentTypeListItem('author').title('Authors'),
+        S.divider(),
+        ...S.documentTypeListItems().filter(// (item) => item.getId() && !['post', 'category', 'author'].includes(item.getId()),
+        (item)=>item.getId() && ![
+                'post'
+            ].includes(item.getId()))
+    ]);
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/sanity.config.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+/**
+ * This configuration is used to for the Sanity Studio that’s mounted on the `\app\studio\[[...tool]]\page.jsx` route
+ */ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$vision$2f$lib$2f$_chunks$2d$es$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@sanity/vision/lib/_chunks-es/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sanity$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/sanity/lib/index.js [app-client] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sanity$2f$lib$2f$_chunks$2d$es$2f$pane$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/sanity/lib/_chunks-es/pane.js [app-client] (ecmascript)");
+// Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
+var __TURBOPACK__imported__module__$5b$project$5d2f$sanity$2f$env$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/sanity/env.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$sanity$2f$schemaTypes$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/sanity/schemaTypes/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$sanity$2f$structure$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/sanity/structure.js [app-client] (ecmascript)");
+'use client';
+;
+;
+;
+;
+;
+;
+const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sanity$2f$lib$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["defineConfig"])({
+    basePath: '/',
+    projectId: __TURBOPACK__imported__module__$5b$project$5d2f$sanity$2f$env$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["projectId"],
+    dataset: __TURBOPACK__imported__module__$5b$project$5d2f$sanity$2f$env$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["dataset"],
+    // Add and edit the content schema in the './sanity/schemaTypes' folder
+    schema: __TURBOPACK__imported__module__$5b$project$5d2f$sanity$2f$schemaTypes$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["schema"],
+    plugins: [
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sanity$2f$lib$2f$_chunks$2d$es$2f$pane$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["structureTool"])({
+            structure: __TURBOPACK__imported__module__$5b$project$5d2f$sanity$2f$structure$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["structure"]
+        }),
+        // Vision is for querying with GROQ from inside the Studio
+        // https://www.sanity.io/docs/the-vision-plugin
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$vision$2f$lib$2f$_chunks$2d$es$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["visionTool"])({
+            defaultApiVersion: __TURBOPACK__imported__module__$5b$project$5d2f$sanity$2f$env$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["apiVersion"]
+        })
+    ]
+});
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+]);
+
+//# sourceMappingURL=_f4195e9e._.js.map
