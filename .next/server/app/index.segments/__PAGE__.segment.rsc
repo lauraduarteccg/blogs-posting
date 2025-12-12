@@ -1,0 +1,7 @@
+1:"$Sreact.fragment"
+2:I[45940,["/_next/static/chunks/87dd10a3d2615e9a.js","/_next/static/chunks/788cbe92eb7337a7.js","/_next/static/chunks/925363775fb8b33f.js","/_next/static/chunks/4578c1aa377c92f2.js","/_next/static/chunks/f3c67afc99be4015.js"],"NextStudio"]
+3:I[98857,["/_next/static/chunks/87dd10a3d2615e9a.js","/_next/static/chunks/788cbe92eb7337a7.js","/_next/static/chunks/925363775fb8b33f.js","/_next/static/chunks/4578c1aa377c92f2.js","/_next/static/chunks/f3c67afc99be4015.js"],"default"]
+4:I[97367,["/_next/static/chunks/5d111efa6191105b.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+0:{"buildId":"hMWx0b0vj3fMDlxn0inRJ","rsc":["$","$1","c",{"children":[[["$","script",null,{"src":"https://core.sanity-cdn.com/bridge.js","async":true,"type":"module","data-sanity-core":true}],["$","$L2",null,{"config":"$3"}]],[["$","script","script-0",{"src":"/_next/static/chunks/87dd10a3d2615e9a.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/788cbe92eb7337a7.js","async":true}],["$","script","script-2",{"src":"/_next/static/chunks/925363775fb8b33f.js","async":true}],["$","script","script-3",{"src":"/_next/static/chunks/4578c1aa377c92f2.js","async":true}],["$","script","script-4",{"src":"/_next/static/chunks/f3c67afc99be4015.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"loading":null,"isPartial":false}
+6:null
