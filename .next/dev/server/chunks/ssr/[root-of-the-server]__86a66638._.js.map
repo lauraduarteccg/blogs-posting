@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/xampp/htdocs/sites/paginas/blogs/app/page.tsx"],"sourcesContent":["/**\n * This route is responsible for the built-in authoring environment using Sanity Studio.\n * All routes under your studio path is handled by this file using Next.js' catch-all routes:\n * https://nextjs.org/docs/routing/dynamic-routes#catch-all-routes\n *\n * You can learn more about the next-sanity package here:\n * https://github.com/sanity-io/next-sanity\n */\n\nimport { NextStudio } from 'next-sanity/studio'\nimport config from '../../sanity.config'\n\nexport const dynamic = 'force-static'\n\nexport { metadata, viewport } from 'next-sanity/studio'\n\nexport default function StudioPage() {\n  return <NextStudio config={config} />\n}\n"],"names":[],"mappings":"AAAA;;;;;;;CAOC;;;;;;;AAED;;;;;;;;;AAGO,MAAM,UAAU;;AAIR,SAAS;IACtB,qBAAO,8OAAC,uLAAU;QAAC,QAAQ;;;;;;AAC7B"}}]
-}
