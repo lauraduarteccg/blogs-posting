@@ -1,14 +1,17 @@
 import "server-only";
-
 import { draftMode } from "next/headers";
 import { client } from "@/sanity/lib/client";
 
 const DEFAULT_PARAMS = {};
-const DEFAULT_TAGS = [];
+const DEFAULT_TAGS = ["sanity"];
 
 export const token = process.env.SANITY_API_READ_TOKEN;
 
-export async function sanityFetch({ query, params = DEFAULT_PARAMS, tags = DEFAULT_TAGS }) {
+export async function sanityFetch({
+  query,
+  params = DEFAULT_PARAMS,
+  tags = DEFAULT_TAGS,
+}) {
   const { isEnabled } = await draftMode();
   const isDraftMode = isEnabled;
 
@@ -21,16 +24,18 @@ export async function sanityFetch({ query, params = DEFAULT_PARAMS, tags = DEFAU
   const isDevelopment = process.env.NODE_ENV === "development";
 
   return client
-    .withConfig({ useCdn: true })
+    .withConfig({
+      useCdn: false, 
+    })
     .fetch(query, params, {
-      cache: isDevelopment || isDraftMode ? undefined : "force-cache",
       ...(isDraftMode && {
-        token: token,
+        token,
         perspective: "previewDrafts",
       }),
       next: {
-        ...(isDraftMode && { revalidate: 30 }),
         tags,
+        revalidate: isDraftMode ? 30 : 3600,
       },
+      cache: isDraftMode || isDevelopment ? "no-store" : "force-cache",
     });
 }
